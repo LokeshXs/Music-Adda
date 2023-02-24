@@ -1,0 +1,247 @@
+/* 1 em = 16px */
+
+
+/* ********************************** */
+/* (Smaller Desktops) 1408 px */
+/* ********************************** */
+
+
+@media(max-width: 88em){
+.song-img{
+  height: 6rem;
+  width: 6rem;
+}
+
+.song-playing-metadata{
+  padding-left: 1rem;
+}
+
+}
+
+
+/* ********************************** */
+/* (Smaller Desktops) 1264 px */
+/* ********************************** */
+
+@media(max-width:79em){
+  .song-metadata{
+    column-gap: 2rem;
+  }
+}
+
+/* ********************************** */
+/* (Tablets) 992 px */
+/* ********************************** */
+
+@media(max-width:62em){
+  .control-icon{
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .song-img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+  }
+
+  .song-name{
+    font-size: 1.2rem;
+  }
+
+  .singer-name{
+    font-size: 0.8rem;
+  }
+  
+}
+
+
+/* ********************************** */
+/* (Small Tablets) 848 px */
+/* ********************************** */
+
+@media(max-width:53em){
+  .volume{
+    width: 10rem;
+    height: 0.4rem;
+  }
+
+  .controls{
+    gap: 3rem;
+  }
+
+  
+
+  
+}
+
+/* ********************************** */
+/* (Small Tablets) 784 px */
+/* ********************************** */
+
+@media(max-width:49em){
+  .song-playing-metadata{
+    display: none;
+  }
+
+  .song-playing{
+    justify-content: center;
+  }
+
+  .song-img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+  }
+
+  .progress-container{
+    min-width: 36rem;
+  }
+
+  
+}
+
+/* ********************************** */
+/* (Smaller Tablets) 646 px */
+/* ********************************** */
+
+@media(max-width:41em){
+  .control-icon{
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .progress{
+    height: 0.4rem;
+  }
+
+  .progress-bar::-moz-range-thumb{
+    appearance: none;
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .volume{
+    width: 8rem;
+    height: 0.4rem;
+  }
+
+  .volume::-moz-range-thumb{
+    appearance: none;
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .tooltip .tooltiptext{
+    width: 8rem;
+    font-size: 0.8rem;
+  }
+
+  .controls{
+    gap: 2rem;
+  }
+}
+
+
+/* ******************************** */
+/* BELOW 592px (Phones) */
+/* ******************************** */
+
+@media(max-width:37em){
+  .song-metadata{
+    column-gap: 1rem;
+  }
+
+  .progress-container{
+    min-width: 32rem;
+  }
+
+  .song-img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+  
+  .time-elapsed{
+    padding: 0 1rem;
+  }
+}
+
+/* ******************************** */
+/* BELOW 528px (Phones) */
+/* ******************************** */
+
+@media(max-width:33em){
+  .song-metadata{
+    /* column-gap: 1rem; */
+    position: relative;
+  }
+
+  .volume{
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 40%;
+    height: 0.8rem;
+    opacity: 0;
+    
+    box-shadow: 0 0 20px 2px #339933;
+  
+  }
+
+  .visible-opacity{
+    opacity: 1;
+  }
+  
+
+  .volume::-moz-range-thumb{
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+}
+
+
+/* ******************************** */
+/* BELOW 464px (Phones) */
+/* ******************************** */
+
+@media(max-width:29em){
+
+  .volume-container,.progress-container{
+    display: none;
+  }
+
+  .controls-section{
+grid-column: 2/-1;
+grid-template-rows: 1fr;
+align-self: center;
+align-content: center;
+justify-content: center;
+padding: 1rem 0;
+  }
+
+  .section-song-metadata{
+    height: 7rem;
+    border-top: solid 3px #fff;
+  }
+.song-playing{
+  padding: 1rem 0 1rem 1rem;
+}
+
+.song-img{
+  width: 5rem;
+  height: 5rem;
+}
+
+.controls{
+  gap: 3rem;
+}
+
+.control-icon{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+}
